@@ -110,7 +110,7 @@ nav a {
     color: var(--header-text-color);
 }
 
-button[type="submit"]g {
+button[type="submit"] {
     display: inline-block;
     padding: var(--spacing1);
     background-color: var(--bgcolor-dark);
