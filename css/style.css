@@ -1,0 +1,14 @@
+:root {
+    --bgcolor: #F4F6F1;
+    --header-text: #F4F6F1;
+    --body-text: #222021;
+    --header-color: #222021;
+    
+    --spacing1: 8px;
+    --spacing2: 16px;
+    --spacing3: 24px;
+
+    --small-text: 16px;
+    --regular-text: 24px;
+    --large-text: 32px;
+}
