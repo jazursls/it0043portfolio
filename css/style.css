@@ -124,15 +124,16 @@ nav {
     background-color: #363636
 }
 
-nav a:hover {
-    text-decoration: underline;
-    color: white;
-}
-
 nav a {
     display: inline-block;
     color: var(--header-text-color);
     text-decoration: none;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #FFEE8C;
 }
 
 /* Reusable Components */
@@ -150,10 +151,11 @@ button[type="submit"] {
     color: var(--header-text-color);
     border: none;
     margin-bottom: var(--spacing2);
+    transition: 0.5s;
 } 
 
 button[type="submit"]:hover {
-    background-color: black;
+    background-color: grey;
 }
 
 button[type="submit"]:focus {
@@ -185,5 +187,11 @@ th, td {
 @media (max-width: 300px) {
     nav {
         flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    nav a, button[type="submit"] {
+        transition: none;
     }
 }
