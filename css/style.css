@@ -70,7 +70,7 @@ aside {
 
 @media (max-width: 800px) {
     .home {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 }
 
@@ -80,7 +80,7 @@ aside {
     gap: var(--spacing2);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .contact {
         grid-template-columns: 1fr;
     }
@@ -95,18 +95,21 @@ nav {
     margin: 0;
     padding: var(--spacing1);
     width: 100%;
+    box-sizing: border-box;
 }
 
 header {
     margin: 0;
     padding: var(--spacing3);
     width: 100%;
+    box-sizing: border-box;
 }
 
 footer {
     margin: 0;
     padding: var(--spacing1);
     width: 100%;
+    box-sizing: border-box; 
 }
 
 aside {
@@ -163,11 +166,17 @@ button[type="submit"]:focus {
     outline-offset: 2px;
 }
 
+aside img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media (max-width: 700px) {
     aside {
         float: none;
         width: 100%;
         margin: 0 0 var(--spacing2);
+        box-sizing: border-box;
     }
 }
 
@@ -182,6 +191,12 @@ th, td {
     padding: var(--spacing1);
     border: 1px solid var(--body-text);
     text-align: center;
+}
+
+@media (max-width: 400px) {
+    table, th, td {
+        font-size: var(--small-text);
+    }
 }
 
 @media (max-width: 300px) {
