@@ -50,6 +50,16 @@ body {
     color: var(--body-text);
 }
 
+footer {
+    background-color: var(--bgcolor-dark);
+    color: var(--header-text-color);
+}
+
+aside {
+    background-color: var(--bgcolor);
+    color: var(--body-text);
+}
+
 /* Spacing */
 
 table {
@@ -60,13 +70,20 @@ table {
 
 body {
     margin: 0;
-    padding: var(--spacing2);
-}
-
-header {
     padding: var(--spacing3);
 }
 
+header {
+    padding: var(--spacing2);
+}
+
+footer {
+    padding: var(--spacing3);
+}
+
+aside {
+    padding: var(--spacing2);
+}
 /* Nav */
 
 nav {
@@ -80,6 +97,7 @@ nav a:hover {
 }
 
 nav a {
+    display: inline-block;
     color: var(--header-text-color);
     text-decoration: none;
 }
@@ -92,7 +110,7 @@ nav a {
     color: var(--header-text-color);
 }
 
-button[type="submit"] {
+button[type="submit"]g {
     display: inline-block;
     padding: var(--spacing1);
     background-color: var(--bgcolor-dark);
