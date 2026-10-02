@@ -2,7 +2,7 @@
     --bgcolor: #F4F6F1;
     --header-text: #F4F6F1;
     --body-text: #222021;
-    --header-color: #222021;
+    --bgcolor-dark: #222021;
     
     --spacing1: 8px;
     --spacing2: 16px;
@@ -11,4 +11,98 @@
     --small-text: 16px;
     --regular-text: 24px;
     --large-text: 32px;
+    --header-text: 40px;
 }
+
+/* Typography */
+
+body {
+    font-family: Helvetica;
+    font-size: var(--regular-text);
+}
+
+h1 {
+    font-weight: bold;
+    font-size: var(--header-text);
+}
+
+h2{
+    font-weight: bold;
+    font-size: var(--large-text);
+}
+
+h3 {
+    font-weight: italic;
+    font-size: var(--small-text);
+}
+
+/* Color */
+
+header {
+    background-color: var(--bgcolor-dark);
+    color: var(--header-text);
+}
+
+body {
+    background-color: var(--bgcolor);
+    color: var(--body-text);
+}
+
+/* Spacing */
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+body {
+    margin: 0;
+    padding: var(--spacing2);
+}
+
+/* Nav */
+
+nav {
+    padding: var(--spacing2);
+    background-color: #363636
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+nav a {
+    color: var(--header-text);
+    text-decoration: none;
+}
+
+/* Reusable Components */
+
+.card {
+    padding: var(--spacing3);
+    background-color: var(--bgcolor-dark);
+    color: var(--header-text);
+
+}
+
+.button {
+    padding: var(--spacing1);
+    background-color: var(--bgcolor-dark);
+    color: var(--header-text);
+    border: none
+} 
+
+.button:hover {
+    background-color: black;
+}
+
+.button:focus {
+    outline: 3px solid var(--bgcolor-dark);
+    outline-offset: 2px;
+}
+
+
+
+
