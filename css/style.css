@@ -61,16 +61,29 @@ aside {
 }
 
 /* Spacing */
+
 .home {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: var(--spacing2);
 }
 
+@media (max-width: 800px) {
+    .home {
+        grid-template-columns: 1fr;
+    }
+}
+
 .contact {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--spacing2);
+}
+
+@media (max-width: 700px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
 }
 
 body {
@@ -167,4 +180,10 @@ th, td {
     padding: var(--spacing1);
     border: 1px solid var(--body-text);
     text-align: center;
+}
+
+@media (max-width: 300px) {
+    nav {
+        flex-direction: column;
+    }
 }
