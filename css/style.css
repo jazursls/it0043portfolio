@@ -1,6 +1,6 @@
 :root {
     --bgcolor: #F4F6F1;
-    --header-text: #F4F6F1;
+    --header-text-color: #F4F6F1;
     --body-text: #222021;
     --bgcolor-dark: #222021;
     
@@ -16,9 +16,11 @@
 
 /* Typography */
 
+
 body {
     font-family: Helvetica;
     font-size: var(--regular-text);
+    text-align: center;
 }
 
 h1 {
@@ -40,7 +42,7 @@ h3 {
 
 header {
     background-color: var(--bgcolor-dark);
-    color: var(--header-text);
+    color: var(--header-text-color);
 }
 
 body {
@@ -61,10 +63,14 @@ body {
     padding: var(--spacing2);
 }
 
+header {
+    padding: var(--spacing3);
+}
+
 /* Nav */
 
 nav {
-    padding: var(--spacing2);
+    padding: var(--spacing1);
     background-color: #363636
 }
 
@@ -74,7 +80,7 @@ nav a:hover {
 }
 
 nav a {
-    color: var(--header-text);
+    color: var(--header-text-color);
     text-decoration: none;
 }
 
@@ -83,22 +89,22 @@ nav a {
 .card {
     padding: var(--spacing3);
     background-color: var(--bgcolor-dark);
-    color: var(--header-text);
-
+    color: var(--header-text-color);
 }
 
-.button {
+button[type="submit"] {
+    display: inline-block;
     padding: var(--spacing1);
     background-color: var(--bgcolor-dark);
-    color: var(--header-text);
+    color: var(--header-text-color);
     border: none
 } 
 
-.button:hover {
+button[type="submit"]:hover {
     background-color: black;
 }
 
-.button:focus {
+button[type="submit"]:focus {
     outline: 3px solid var(--bgcolor-dark);
     outline-offset: 2px;
 }
