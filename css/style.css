@@ -61,13 +61,6 @@ aside {
 }
 
 /* Spacing */
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -145,5 +138,16 @@ button[type="submit"]:focus {
     }
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: var(--spacing2) auto;
+}
 
+th, td {
+    padding: var(--spacing1);
+    border: 1px solid var(--body-text);
+    text-align: center;
+}
 
